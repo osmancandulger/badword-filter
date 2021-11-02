@@ -61,10 +61,3 @@ function wordReplaceWith(
   }
   return string.join(" ");
 }
-console.log(
-  wordReplaceWith("merhaba Jakoben", "*", {
-    curse: true,
-    negative: true,
-    politics: true,
-  })
-);
