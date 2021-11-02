@@ -10,8 +10,28 @@
     "type": "git",
     "url": "test"
   },
-  "author": "ocd",
-  "license": "ISC",
+  "keywords": [
+    "badword filter",
+    "bad-word-filter",
+    "bad-word-filter-js",
+    "bad-word-filter-ts",
+    "bad-word-filter-javascript",
+    "bad-word-filter-typescript",
+    "word filter",
+    "filter",
+    "word-filter",
+    "curse-word-filter",
+    "negative-word-filter",
+    "politics-word-filter",
+    "religion-word-filter"
+  ],
+  "author": "ocd <osmancandulger@gmail.com>",
+  "licenses": [
+    {
+      "type": "ISC",
+      "url": "http://opensource.org/licenses/"
+    }
+  ],
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",
