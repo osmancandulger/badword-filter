@@ -1,0 +1,18 @@
+{
+  "name": "badword-filter",
+  "version": "1.0.0",
+  "description": "Bad word filter for English & Turkish words",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test"
+  },
+  "author": "ocd",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.6"
+  }
+}
