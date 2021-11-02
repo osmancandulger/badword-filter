@@ -9,12 +9,10 @@ interface ValidationOptions {
  * @param {data}: any : tweet object element
  */
 function checkIsValid(data: string, options: ValidationOptions) {
-  const curse = require("./data/tr/curse.json");
+  const string: string[] = data.split(" ");
   let badWordList: string[] = [];
+  let isValid: boolean = true;
   try {
-    // const negative = require("./data/tr/negative.json");
-    // const politics = require("./data/tr/politics.json");
-    // const religion = require("./data/tr/religion.json");
     for (let i = 0; i < Object.keys(options).length; i++) {
       const item: string = Object.keys(options)[i];
       badWordList = [].concat(require(`./data/tr/${item.toLowerCase()}.json`));
@@ -23,10 +21,19 @@ function checkIsValid(data: string, options: ValidationOptions) {
     console.error(error);
   }
   for (let i = 0; i < badWordList.length; i++) {
-    if (data.toLowerCase().includes(badWordList[i].toLowerCase())) {
-      return false;
+    for (let j = 0; j < string.length; j++) {
+      if (badWordList[i].toLowerCase() === string[j].toLowerCase()) {
+        isValid = false;
+        break;
+      }
     }
   }
-  return true;
+  return isValid;
 }
-checkIsValid("", { curse: true, negative: true, politics: true });
+console.log(
+  checkIsValid("merhaba Değerli", {
+    curse: true,
+    negative: true,
+    politics: true,
+  })
+);
