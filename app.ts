@@ -12,14 +12,14 @@ interface ValidationOptions {
  */
 export const checkIsValid = (data: string, options: ValidationOptions) => {
   let concatenated: string[] = require(`./data/tr/${Object.keys(options)[0]}`);
-  let string: any[] = data.split(" ");
+  let string: any[] = data.split(' ');
   let badWordList: string[] = [];
   let isValid: boolean = true;
   try {
     for (let i = 0; i < Object.keys(options).length; i++) {
       const item: string = Object.keys(options)[i];
       badWordList = concatenated.concat(
-        require(`./data/tr/${item.toLowerCase()}.json`)
+        require(`./data/tr/${item.toLowerCase()}.json`),
       );
     }
   } catch (error) {
@@ -44,17 +44,17 @@ export const checkIsValid = (data: string, options: ValidationOptions) => {
 export const replaceWordWith = (
   data: string,
   replacer: string,
-  options: ValidationOptions
+  options: ValidationOptions,
 ) => {
   let concatenated: string[] = require(`./data/tr/${Object.keys(options)[0]}`);
-  let string: any[] = data.split(" ");
+  let string: any[] = data.split(' ');
   let badWordList: string[] = [];
   let isValid: boolean = true;
   try {
     for (let i = 1; i < Object.keys(options).length; i++) {
       const item: string = Object.keys(options)[i];
       badWordList = concatenated.concat(
-        require(`./data/tr/${item.toLowerCase()}.json`)
+        require(`./data/tr/${item.toLowerCase()}.json`),
       );
     }
   } catch (error) {
@@ -65,11 +65,11 @@ export const replaceWordWith = (
       if (badWordList[i].toLowerCase() === string[j].toLowerCase()) {
         isValid = false;
         string[string.indexOf(string[j])] = replacer.repeat(
-          string[j].length - 1
+          string[j].length - 1,
         );
         break;
       }
     }
   }
-  return string.join(" ");
+  return string.join(' ');
 };
