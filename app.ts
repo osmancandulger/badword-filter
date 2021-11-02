@@ -5,8 +5,9 @@ interface ValidationOptions {
   religion?: boolean;
 }
 /**
- * @description Get tweet response object
- * @param {data}: any : tweet object element
+ * @description Check given string to validate
+ * @param {data}: string : text to validate
+ * @param {options}: ValidationOptions : ValidationOptions option to fetch related word lists
  */
 function checkIsValid(data: string, options: ValidationOptions) {
   const string: string[] = data.split(" ");
@@ -31,8 +32,10 @@ function checkIsValid(data: string, options: ValidationOptions) {
   return isValid;
 }
 /**
- * @description Get tweet response object
- * @param {data}: any : tweet object element
+ * @description Replace bad word with given mask string
+ * @param {data}: string : text to validate
+ * @param {replacer}: string : mask string to replace it
+ * @param {options}: ValidationOptions : ValidationOptions option to fetch related word lists
  */
 function wordReplaceWith(
   data: string,
