@@ -39,10 +39,9 @@ function wordReplaceWith(
   replacer: string,
   options: ValidationOptions
 ) {
-  let string: any[] = data.split(" ");
+  let string: string[] = data.split(" ");
   let badWordList: string[] = [];
   let isValid: boolean = true;
-  let replacedString: string = "";
   try {
     for (let i = 0; i < Object.keys(options).length; i++) {
       const item: string = Object.keys(options)[i];
@@ -55,7 +54,7 @@ function wordReplaceWith(
     for (let j = 0; j < string.length; j++) {
       if (badWordList[i].toLowerCase() === string[j].toLowerCase()) {
         isValid = false;
-        string[string.indexOf(string[j])] = "*".repeat(string[j].length);
+        string[string.indexOf(string[j])] = replacer.repeat(string[j].length);
         break;
       }
     }
