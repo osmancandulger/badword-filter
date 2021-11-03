@@ -1,5 +1,5 @@
 {
-  "name": "badword-filter",
+  "name": "@osmancandulger/badword-filter",
   "version": "1.0.0",
   "description": "Bad word filter for English & Turkish words",
   "main": "app.ts",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "test"
+    "url": "git://github.com/osmancandulger/badword-filter.git"
   },
   "keywords": [
     "badword filter",
