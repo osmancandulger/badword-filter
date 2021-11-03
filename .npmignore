@@ -1,0 +1,6 @@
+test
+coverage
+.*
+*.log
+.github
+.vscode

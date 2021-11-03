@@ -4,15 +4,42 @@
   "description": "Bad word filter for English & Turkish words",
   "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "test"
+    "url": "git://github.com/osmancandulger/badword-filter.git"
   },
-  "author": "ocd",
-  "license": "ISC",
+  "keywords": [
+    "badword filter",
+    "bad-word-filter",
+    "bad-word-filter-js",
+    "bad-word-filter-ts",
+    "bad-word-filter-javascript",
+    "bad-word-filter-typescript",
+    "word filter",
+    "filter",
+    "word-filter",
+    "curse-word-filter",
+    "negative-word-filter",
+    "politics-word-filter",
+    "religion-word-filter"
+  ],
+  "author": "ocd <osmancandulger@gmail.com>",
+  "licenses": [
+    {
+      "type": "ISC",
+      "url": "http://opensource.org/licenses/"
+    }
+  ],
   "devDependencies": {
-    "@types/node": "^16.11.6"
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.16.0"
   }
 }
