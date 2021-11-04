@@ -4,3 +4,4 @@ coverage
 *.log
 .github
 .vscode
+node_modules
