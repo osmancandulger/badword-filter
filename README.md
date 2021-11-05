@@ -5,8 +5,8 @@ You may filter quickly your strings in a couple steps. You can check is provided
 # Related Functions
 
 ```
-You can import related functions like
-import {checkIsValid,replaceWordWith} from 'badword-list';
+You can import related functions as follows;
+import { checkIsValid,replaceWordWith } from 'badword-list';
 ```
 
 ## checkIsValid
