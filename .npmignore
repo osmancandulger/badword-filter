@@ -8,3 +8,4 @@ node_modules
 webpack.*
 babel.*
 jest.*
+npm-shrinkwrap
