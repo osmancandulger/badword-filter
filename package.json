@@ -3,13 +3,17 @@
   "version": "1.0.21",
   "description": "Bad word filter for English & Turkish words",
   "main": "lib/app.js",
-  "scripts": {
-    "test": "jest",
-    "build": "webpack --mode production"
-  },
+  "homepage": "https://github.com/osmancandulger/badword-filter#readme",
   "repository": {
     "type": "git",
     "url": "git://github.com/osmancandulger/badword-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/osmancandulger/badword-filter/issues"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --mode production"
   },
   "files": [
     "lib"
@@ -29,12 +33,8 @@
     "politics-word-filter",
     "religion-word-filter"
   ],
-  "author": "ocd <osmancandulger@gmail.com>",
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "author": "Osman Can Dülger <osmancandulger@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",
