@@ -11,18 +11,14 @@ interface ValidationOptions {
  * @param {options}: ValidationOptions : ValidationOptions option to fetch related word lists
  */
 export const checkIsValid = (data: string, options: ValidationOptions) => {
-  let concatenated: string[] = require(`./data/tr/${
-    Object.keys(options)[0]
-  }.json`);
   let string: any[] = data.split(' ');
   let badWordList: string[] = [];
   let isValid: boolean = true;
   try {
     for (let i = 0; i < Object.keys(options).length; i++) {
       const item: string = Object.keys(options)[i];
-      badWordList = concatenated.concat(
-        require(`./data/tr/${item.toLowerCase()}.json`),
-      );
+      const data: any = require(`./data/tr/${item.toLowerCase()}.json`);
+      badWordList.push(...data);
     }
   } catch (error) {
     console.error(error);
@@ -72,7 +68,7 @@ export const replaceWordWith = (
   return string.join(' ');
 };
 console.log(
-  replaceWordWith('bagnazlik yarrak yapma', '*', {
+  checkIsValid('darbeci', {
     politics: true,
     religion: true,
     negative: true,
