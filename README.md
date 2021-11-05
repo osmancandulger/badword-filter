@@ -4,6 +4,11 @@ You may filter quickly your strings in a couple steps. You can check is provided
 
 # Related Functions
 
+```
+You can import related functions like
+import {checkIsValid,replaceWordWith} from 'badword-list';
+```
+
 ## checkIsValid
 
 This function takes two args and returns boolean as validation result.
