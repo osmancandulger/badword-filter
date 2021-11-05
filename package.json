@@ -5,7 +5,7 @@
   "main": "lib/app.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc -p ."
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

@@ -1,22 +1,23 @@
 const path = require('path');
 
 module.exports = {
-  entry: './app.ts',
   mode: 'production',
+  entry: './app.ts',
+  output: {
+    path: path.resolve('lib'),
+    filename: 'app.js',
+    libraryTarget: 'commonjs2',
+  },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
+        exclude: /(node_modules)/,
         use: 'ts-loader',
-        exclude: /node_modules/,
       },
     ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-  },
-  output: {
-    filename: 'app.js',
-    path: path.resolve(__dirname, 'lib'),
   },
 };
