@@ -15,10 +15,12 @@ export const checkIsValid = (data: string, options: ValidationOptions) => {
   let badWordList: string[] = [];
   let isValid: boolean = true;
   try {
-    for (let i = 0; i < Object.keys(options).length; i++) {
-      const item: string = Object.keys(options)[i];
-      const data: any = require(`./data/tr/${item.toLowerCase()}.json`);
-      badWordList.push(...data);
+    for (const [key, value] of Object.entries(options)) {
+      if (value) {
+        const item: string = key;
+        const data: any = require(`./data/tr/${item.toLowerCase()}.json`);
+        badWordList.push(...data);
+      }
     }
   } catch (error) {
     console.error(error);
@@ -31,6 +33,7 @@ export const checkIsValid = (data: string, options: ValidationOptions) => {
       }
     }
   }
+
   return isValid;
 };
 /**
@@ -47,10 +50,12 @@ export const replaceWordWith = (
   let string: any[] = data.split(' ');
   let badWordList: string[] = [];
   try {
-    for (let i = 0; i < Object.keys(options).length; i++) {
-      const item: string = Object.keys(options)[i];
-      const data: any = require(`./data/tr/${item.toLowerCase()}.json`);
-      badWordList.push(...data);
+    for (const [key, value] of Object.entries(options)) {
+      if (value) {
+        const item: string = key;
+        const data: any = require(`./data/tr/${item.toLowerCase()}.json`);
+        badWordList.push(...data);
+      }
     }
   } catch (error) {
     console.error(error);
@@ -67,11 +72,3 @@ export const replaceWordWith = (
   }
   return string.join(' ');
 };
-console.log(
-  checkIsValid('darbeci', {
-    politics: true,
-    religion: true,
-    negative: true,
-    curse: true,
-  }),
-);
