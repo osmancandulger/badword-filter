@@ -1,6 +1,6 @@
 {
   "name": "badword-filter",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Bad word filter for English & Turkish words",
   "main": "lib/app.js",
   "scripts": {
