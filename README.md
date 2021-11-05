@@ -48,7 +48,7 @@ replaceWordWith('word':string,"*",ValidationOptions)
 
 ## Demo
 
-- [CodePen Demo](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [CodeSandBox Demo](https://codesandbox.io/s/badword-filter-demo-sxtz6?file=/src/App.vue)
 
 ## Authors
 
