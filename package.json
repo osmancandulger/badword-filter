@@ -12,7 +12,7 @@
     "url": "https://github.com/osmancandulger/badword-filter/issues"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "webpack --mode production"
   },
   "files": [
