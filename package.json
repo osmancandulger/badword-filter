@@ -45,9 +45,6 @@
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1"
   },
-  "publishConfig": {
-    "@osmancandulger:registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "@babel/preset-typescript": "^7.16.0"
   }
