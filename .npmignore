@@ -5,3 +5,6 @@ coverage
 .github
 .vscode
 node_modules
+webpack.*
+babel.*
+jest.*
