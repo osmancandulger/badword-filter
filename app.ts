@@ -49,7 +49,6 @@ export const replaceWordWith = (
   let concatenated: string[] = require(`./data/tr/${Object.keys(options)[0]}`);
   let string: any[] = data.split(' ');
   let badWordList: string[] = [];
-  let isValid: boolean = true;
   try {
     for (let i = 1; i < Object.keys(options).length; i++) {
       const item: string = Object.keys(options)[i];
@@ -63,7 +62,6 @@ export const replaceWordWith = (
   for (let i = 0; i < badWordList.length; i++) {
     for (let j = 0; j < string.length; j++) {
       if (badWordList[i].toLowerCase() === string[j].toLowerCase()) {
-        isValid = false;
         string[string.indexOf(string[j])] = replacer.repeat(
           string[j].length - 1,
         );
