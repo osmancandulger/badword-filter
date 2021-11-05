@@ -1,6 +1,6 @@
 {
   "name": "badword-filter",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Bad word filter for English & Turkish words",
   "main": "lib/app.js",
   "scripts": {
@@ -32,8 +32,7 @@
   "author": "ocd <osmancandulger@gmail.com>",
   "licenses": [
     {
-      "type": "ISC",
-      "url": "http://opensource.org/licenses/"
+      "type": "MIT"
     }
   ],
   "devDependencies": {
