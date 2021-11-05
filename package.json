@@ -13,6 +13,7 @@
   },
   "scripts": {
     "test": "jest --coverage",
+    "jest": "jest",
     "build": "webpack --mode production"
   },
   "files": [
