@@ -11,7 +11,9 @@ interface ValidationOptions {
  * @param {options}: ValidationOptions : ValidationOptions option to fetch related word lists
  */
 export const checkIsValid = (data: string, options: ValidationOptions) => {
-  let concatenated: string[] = require(`./data/tr/${Object.keys(options)[0]}`);
+  let concatenated: string[] = require(`./data/tr/${
+    Object.keys(options)[0]
+  }.json`);
   let string: any[] = data.split(' ');
   let badWordList: string[] = [];
   let isValid: boolean = true;
@@ -46,7 +48,9 @@ export const replaceWordWith = (
   replacer: string,
   options: ValidationOptions,
 ) => {
-  let concatenated: string[] = require(`./data/tr/${Object.keys(options)[0]}`);
+  let concatenated: string[] = require(`./data/tr/${
+    Object.keys(options)[0]
+  }.json`);
   let string: any[] = data.split(' ');
   let badWordList: string[] = [];
   try {
