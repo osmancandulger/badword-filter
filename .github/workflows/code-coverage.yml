@@ -5,15 +5,13 @@ name: Build Status
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master,development ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
-
     runs-on: ${{ matrix.os }}
-
     strategy:
       matrix:
         os: [ubuntu-latest]
