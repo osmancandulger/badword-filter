@@ -9,7 +9,14 @@ You may filter quickly your strings in a couple steps. You can check is provided
 This function takes two args and returns boolean as validation result.
 
 ```
-checkIsValid('word':String,{curse:Boolean,negative:Boolean,politics:Boolean,religions:Boolean})
+const ValidationOptions:object = {
+  curse:boolean,
+  negative:boolean,
+  politics:boolean,
+  religions:boolean
+}
+
+checkIsValid('word':string,ValidationOptions)
 
 ```
 
@@ -23,7 +30,13 @@ checkIsValid('word':String,{curse:Boolean,negative:Boolean,politics:Boolean,reli
 This function takes three args and returns masked string with given pattern as validation result.
 
 ```
-replaceWordWith('word':String,"*",{curse:Boolean,negative:Boolean,politics:Boolean,religions:Boolean})
+const ValidationOptions:object = {
+  curse:boolean,
+  negative:boolean,
+  politics:boolean,
+  religions:boolean
+}
+replaceWordWith('word':string,"*",ValidationOptions)
 
 ```
 
