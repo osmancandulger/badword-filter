@@ -1,7 +1,7 @@
 interface ValidationOptions {
-  curse?: boolean;
+  swear?: boolean;
   negative?: boolean;
-  politics?: boolean;
+  political?: boolean;
   religion?: boolean;
 }
 
