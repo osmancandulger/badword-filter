@@ -1,6 +1,6 @@
 {
   "name": "badword-filter",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "Bad word filter for English & Turkish words",
   "main": "lib/app.js",
   "homepage": "https://github.com/osmancandulger/badword-filter#readme",
