@@ -17,9 +17,9 @@ This function takes two args and returns boolean as validation result.
 
 ```
 const ValidationOptions:object = {
-  curse:boolean,
+  swear:boolean,
   negative:boolean,
-  politics:boolean,
+  political:boolean,
   religions:boolean
 }
 
@@ -38,9 +38,9 @@ This function takes three args and returns masked string with given pattern as v
 
 ```
 const ValidationOptions:object = {
-  curse:boolean,
+  swear:boolean,
   negative:boolean,
-  politics:boolean,
+  political:boolean,
   religions:boolean
 }
 replaceWordWith('word':string,"*",ValidationOptions)
