@@ -20,3 +20,25 @@ test('Result should be false for uppercase and lowercase strings', () => {
     }),
   ).toEqual(false);
 });
+test('Should throw console.error', () => {
+  try {
+    expect(
+      checkIsValid('O çok dış MihrAk birisi!', {
+        asd: true,
+      }),
+    ).toMatch('TSError');
+  } catch (e) {
+    expect(e).toBeFalsy;
+  }
+});
+test('Should throw console.error', () => {
+  try {
+    expect(
+      replaceWordWith('O çok dış MihrAk birisi!', '*', {
+        asd: true,
+      }),
+    ).toMatch('TSError');
+  } catch (e) {
+    expect(e).toBeFalsy;
+  }
+});
