@@ -1,5 +1,6 @@
 # Bad Word Filter for TR lang words
 
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/osmancandulger/bdfb7916de152ee25cd78a35bdc9098e/raw/badword-filter__heads_main.json)
 
 You may filter quickly your strings in a couple steps. You can check is provided string is valid ? or you can simply replace bad word with given character.(English will be available soon.)
 
