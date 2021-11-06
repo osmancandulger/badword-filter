@@ -37,7 +37,7 @@
   "author": "Osman Can Dülger <osmancandulger@gmail.com>",
   "license": "MIT",
   "publishConfig": {
-    "@osmancandulger:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
