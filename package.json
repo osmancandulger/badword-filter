@@ -1,5 +1,5 @@
 {
-  "name": "@osmancandulger/badword-filter",
+  "name": "badword-filter",
   "version": "1.0.31",
   "description": "Bad word filter for English & Turkish words",
   "main": "lib/app.js",
