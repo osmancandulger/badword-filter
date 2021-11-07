@@ -1,5 +1,5 @@
 {
-  "name": "badword-filter",
+  "name": "@osmancandulger/badword-filter",
   "version": "1.0.30",
   "description": "Bad word filter for English & Turkish words",
   "main": "lib/app.js",
@@ -34,7 +34,7 @@
   "author": "Osman Can Dülger <osmancandulger@gmail.com>",
   "license": "MIT",
   "publishConfig": {
-    "@osmancandulger:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
