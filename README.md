@@ -1,6 +1,10 @@
 # Bad Word Filter for TR lang words
 
-![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/osmancandulger/bdfb7916de152ee25cd78a35bdc9098e/raw/badword-filter__heads_main.json)
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/osmancandulger/bdfb7916de152ee25cd78a35bdc9098e/raw/badword-filter__heads_main.json) <br>
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+![made-with-ts](https://user-images.githubusercontent.com/59533680/140908255-223630cb-bd71-408b-885d-5e3a4e2665d3.png)
+![makes-things-done](https://user-images.githubusercontent.com/59533680/140908137-767d2a0f-906c-44fe-8a8d-8e08a6bca0aa.png)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://codepen.io/osmancandulger/pen/wvqXKdz)
 
 You may filter quickly your strings in a couple steps. You can check is provided string is valid ? or you can simply replace bad word with given character.(English will be available soon.)
 
