@@ -56,6 +56,7 @@ replaceWordWith('word':string,"*",ValidationOptions)
 ## Demo
 
 - [CodeSandBox Demo](https://codesandbox.io/s/badword-filter-demo-sxtz6?file=/src/App.vue)
+- [CodePen Demo](https://codepen.io/osmancandulger/pen/wvqXKdz)
 
 ## Authors
 
