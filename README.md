@@ -17,7 +17,7 @@ import { checkIsValid,replaceWordWith } from 'badword-list';
 
 ## checkIsValid
 
-This function takes two args and returns boolean as validation result.
+This function takes two args and returns boolean as validation result. <br>
 You can use swear words list only for English language for now.
 
 ```
@@ -39,7 +39,7 @@ checkIsValid('word':string,ValidationOptions)
 
 ## replaceWordWith
 
-This function takes three args and returns masked string with given pattern as validation result.
+This function takes three args and returns masked string with given pattern as validation result. <br>
 You can use swear words list only for English language for now.
 
 ```
