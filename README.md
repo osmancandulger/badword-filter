@@ -1,4 +1,4 @@
-# Bad Word Filter for TR lang words
+# Bad Word Filter for EN && TR lang words
 
 ![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/osmancandulger/bdfb7916de152ee25cd78a35bdc9098e/raw/badword-filter__heads_main.json) <br>
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
