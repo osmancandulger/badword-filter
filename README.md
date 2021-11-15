@@ -6,7 +6,7 @@
 ![makes-things-done](https://user-images.githubusercontent.com/59533680/140908137-767d2a0f-906c-44fe-8a8d-8e08a6bca0aa.png)
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://codepen.io/osmancandulger/pen/wvqXKdz)
 
-You may filter quickly your strings in a couple steps. You can check is provided string is valid ? or you can simply replace bad word with given character.(English will be available soon.)
+You may filter quickly your strings in a couple steps. You can check is provided string is valid ? or you can simply replace bad word with given character.(You can use swear words list only for English language for now.)
 
 # Related Functions
 
@@ -18,6 +18,7 @@ import { checkIsValid,replaceWordWith } from 'badword-list';
 ## checkIsValid
 
 This function takes two args and returns boolean as validation result.
+You can use swear words list only for English language for now.
 
 ```
 const ValidationOptions:object = {
@@ -39,6 +40,7 @@ checkIsValid('word':string,ValidationOptions)
 ## replaceWordWith
 
 This function takes three args and returns masked string with given pattern as validation result.
+You can use swear words list only for English language for now.
 
 ```
 const ValidationOptions:object = {

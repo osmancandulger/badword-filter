@@ -1,4 +1,5 @@
 interface ValidationOptions {
+  language: string;
   swear?: boolean;
   negative?: boolean;
   political?: boolean;
@@ -16,9 +17,11 @@ export const checkIsValid = (data: string, options: ValidationOptions) => {
   let isValid: boolean = true;
   try {
     for (const [key, value] of Object.entries(options)) {
-      if (value) {
+      if (value && key != 'language') {
         const item: string = key;
-        const data: any = require(`./data/tr/${item.toLowerCase()}.json`);
+        const data: any = require(`./data/${
+          options.language
+        }/${item.toLowerCase()}.json`);
         badWordList.push(...data);
       }
     }
@@ -51,9 +54,11 @@ export const replaceWordWith = (
   let badWordList: string[] = [];
   try {
     for (const [key, value] of Object.entries(options)) {
-      if (value) {
+      if (value && key != 'language') {
         const item: string = key;
-        const data: any = require(`./data/tr/${item.toLowerCase()}.json`);
+        const data: any = require(`./data/${
+          options.language
+        }/${item.toLowerCase()}.json`);
         badWordList.push(...data);
       }
     }
