@@ -68,9 +68,7 @@ export const replaceWordWith = (
   for (let i = 0; i < badWordList.length; i++) {
     for (let j = 0; j < string.length; j++) {
       if (badWordList[i].toLowerCase() === string[j].toLowerCase()) {
-        string[string.indexOf(string[j])] = replacer.repeat(
-          string[j].length - 1,
-        );
+        string[string.indexOf(string[j])] = replacer.repeat(string[j].length);
         break;
       }
     }
