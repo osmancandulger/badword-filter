@@ -11,8 +11,9 @@ You may filter quickly your strings in a couple steps. You can check is provided
 # Related Functions
 
 You can import related functions as follows;
+
 ```javascript
-import { checkIsValid,replaceWordWith } from 'badword-list';
+import { checkIsValid, replaceWordWith } from 'badword-list';
 ```
 
 ## checkIsValid
@@ -21,15 +22,14 @@ This function takes two args and returns boolean as validation result. <br>
 You can use swear words list only for English language for now.
 
 ```javascript
-const ValidationOptions:object = {
-  swear:boolean,
-  negative:boolean,
-  political:boolean,
-  religions:boolean
-}
+const ValidationOptions: object = {
+  swear: boolean,
+  negative: boolean,
+  political: boolean,
+  religions: boolean,
+};
 
-checkIsValid('word':string,ValidationOptions)
-
+checkIsValid('word', ValidationOptions);
 ```
 
 | Parameter           | Type     | Description                                   |
@@ -43,14 +43,13 @@ This function takes three args and returns masked string with given pattern as v
 You can use swear words list only for English language for now.
 
 ```javascript
-const ValidationOptions:object = {
-  swear:boolean,
-  negative:boolean,
-  political:boolean,
-  religions:boolean
-}
-replaceWordWith('word':string,"*",ValidationOptions)
-
+const ValidationOptions: object = {
+  swear: boolean,
+  negative: boolean,
+  political: boolean,
+  religions: boolean,
+};
+replaceWordWith('word', '*', ValidationOptions);
 ```
 
 | Parameter              | Type     | Description                                             |
