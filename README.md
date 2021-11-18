@@ -10,7 +10,7 @@ You may filter quickly your strings in a couple steps. You can check is provided
 
 # Related Functions
 
-```
+```javascript
 You can import related functions as follows;
 import { checkIsValid,replaceWordWith } from 'badword-list';
 ```
@@ -20,7 +20,7 @@ import { checkIsValid,replaceWordWith } from 'badword-list';
 This function takes two args and returns boolean as validation result. <br>
 You can use swear words list only for English language for now.
 
-```
+```javascript
 const ValidationOptions:object = {
   swear:boolean,
   negative:boolean,
@@ -42,7 +42,7 @@ checkIsValid('word':string,ValidationOptions)
 This function takes three args and returns masked string with given pattern as validation result. <br>
 You can use swear words list only for English language for now.
 
-```
+```javascript
 const ValidationOptions:object = {
   swear:boolean,
   negative:boolean,
