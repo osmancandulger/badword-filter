@@ -9,7 +9,7 @@ You may filter quickly your strings in a couple steps. You can check is provided
 You can import related functions as follows;
 
 ```javascript
-import { checkIsValid, replaceWordWith } from 'badword-list';
+import { checkIsValid, replaceWordWith } from 'badword-filter';
 ```
 
 ## checkIsValid
